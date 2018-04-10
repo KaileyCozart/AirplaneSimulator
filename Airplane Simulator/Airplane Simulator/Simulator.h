@@ -112,7 +112,7 @@ public:
 			landing_queue_average_wait_time = landing_queue->get_total_wait() / landing_queue->get_num_served();
 		else
 			landing_queue_average_wait_time = 0;
-		std::cout << "Average wait time for the landing queue: " << landing_queue_average_wait_time << std::endl;
+		std::cout << "Average wait time for the arrival queue: " << landing_queue_average_wait_time << std::endl;
 		// End of FIXME
 
 		std::cout << std::endl;

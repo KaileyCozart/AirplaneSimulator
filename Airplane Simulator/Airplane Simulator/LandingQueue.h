@@ -43,7 +43,7 @@ public:
 		*/
 		if (my_random.next_double() < arrival_rate) { // Statistical calculation for whether there is an arrival
 			// Push back to vector
-			the_queue.push(Plane(clock));
+			the_queue.push(new Plane(clock));
 		}
 	}
 

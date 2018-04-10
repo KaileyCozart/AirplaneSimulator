@@ -1,8 +1,2 @@
 ﻿  Airplane Simulator.cpp
-c:\users\kaiwi\documents\github\airplanesimulator\airplane simulator\airplane simulator\landingqueue.h(46): error C2664: 'void std::queue<Plane *,std::deque<_Ty,std::allocator<_Ty>>>::push(Plane *const &)': cannot convert argument 1 from 'Plane' to 'Plane *&&'
-          with
-          [
-              _Ty=Plane *
-          ]
-  c:\users\kaiwi\documents\github\airplanesimulator\airplane simulator\airplane simulator\landingqueue.h(46): note: Reason: cannot convert from 'Plane' to 'Plane *'
-  c:\users\kaiwi\documents\github\airplanesimulator\airplane simulator\airplane simulator\landingqueue.h(46): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  Airplane Simulator.vcxproj -> C:\Users\kaiwi\Documents\GitHub\AirplaneSimulator\Airplane Simulator\Debug\Airplane Simulator.exe

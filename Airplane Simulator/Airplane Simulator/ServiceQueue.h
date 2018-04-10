@@ -66,12 +66,11 @@ public:
 				landing_queue->the_queue.pop();
 
 				// FIXME: calculate the wait time of the plane in the landing queue
-				int wait_time = plane->arrival_time - plane->start_service_time;
+				plane->service_time = plane->arrival_time - plane->start_service_time;
 
 				// FIXME: update total_wait and num_served for the landing queue
-				std::cout << "We reached this point: " << landing_queue->num_served << std::endl;
 				landing_queue->num_served = landing_queue->num_served + 1;
-				std::cout << "Exits operation with: " << landing_queue->num_served << std::endl;
+				landing_queue->total_wait = landing_queue->total_wait + plane->service_time;
 
 				// FIXME: update the start_service_time attribute for the plane
 				update(plane->start_service_time);
