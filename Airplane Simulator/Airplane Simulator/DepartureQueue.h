@@ -43,11 +43,11 @@ public:
 					// FIXME: remove plane from departure queue
 					the_queue.pop();
 
-					// FIXME: calculate the wait time -- time plane waited at front of queque FIX
-					int wait_time = departure_time;
+					// ---FIXME: calculate the wait time -- time plane waited at front of queque
+					int wait_time = clock - plane->ready_takeoff_time;
 
-					// FIXME: update total_wait and num_served
-					this->num_served++;
+					// ---FIXME: update total_wait and num_served
+					num_served = num_served + 1;
 					total_wait = total_wait + wait_time;
 
 					// take off!   goodbye plane
