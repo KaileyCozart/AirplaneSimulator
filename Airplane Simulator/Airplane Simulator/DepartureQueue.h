@@ -44,7 +44,7 @@ public:
 					the_queue.pop();
 
 					// ---FIXME: calculate the wait time -- time plane waited at front of queque
-					int wait_time = clock - plane->ready_takeoff_time;
+					int wait_time = clock - plane->enter_departure_time;
 
 					// ---FIXME: update total_wait and num_served
 					num_served = num_served + 1;
